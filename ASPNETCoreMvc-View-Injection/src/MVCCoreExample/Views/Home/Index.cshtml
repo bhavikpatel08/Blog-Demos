@@ -1,0 +1,9 @@
+﻿@inject MVCCoreExample.Models.FruitServices fruitList
+
+<h3>Fruit List</h3>
+<ul>
+    @foreach (var name in fruitList.GetFruits())
+    {
+        <li>@name</li>
+    }
+</ul>
